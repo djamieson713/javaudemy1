@@ -1,12 +1,27 @@
 package app;
 
-class MotorBike {
+public class MotorBike {
+    // state
+    private int speed;
 
-    int noOfWheels = 2;
-    int noOfCyclinders = 4;
-
-    MotorBike(){
-        System.out.printf("A new motorcycle was created with %d wheels and %d cyclinders", noOfWheels, noOfCyclinders);
+    //behavior
+    //method
+    //inputs - int speed
+    //outputs - void 
+    //name - setSpeed
+    void setSpeed(int speed)
+    { //local variable
+        this.speed = speed;
     }
 
+    int getSpeed()
+    {
+        return this.speed;
+    }
+
+void start()
+{
+   System.out.println("Bike Started"); 
+}
+   
 }
